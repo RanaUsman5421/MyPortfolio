@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react'
-import portrait from '../assets/portfolio-portrait.png'
+import portrait from '../assets/portfolio-portrait.webp'
 import Button from './ui/Button'
 
 function ArrowIcon() {
