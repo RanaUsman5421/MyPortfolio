@@ -52,7 +52,7 @@ export default function Navbar() {
     <>
       <header className="fixed left-1/2 top-4 z-[80] flex h-[64px] w-[95vw] max-w-[1400px] -translate-x-1/2 animate-nav-in items-center justify-between rounded-full border border-black/[.1] bg-[linear-gradient(135deg,rgba(255,255,255,.90),rgba(255,255,255,.62)_45%,rgba(255,138,30,.06))] px-3 pl-[19px] shadow-[inset_0_1px_0_#fff,0_24px_60px_-24px_rgba(23,19,15,.25)] backdrop-blur-[26px] after:pointer-events-none after:absolute after:left-[7%] after:right-[7%] after:top-0 after:h-px after:bg-[linear-gradient(90deg,transparent,#fff,transparent)] dark:border-white/[.15] dark:bg-[linear-gradient(135deg,rgba(255,255,255,.115),rgba(255,255,255,.032)_43%,rgba(255,138,30,.055))] dark:shadow-[inset_0_1px_0_rgba(255,255,255,.25),0_26px_60px_-24px_rgba(0,0,0,.9),0_0_0_1px_rgba(255,138,30,.07)] dark:after:bg-[linear-gradient(90deg,transparent,rgba(255,255,255,.9),transparent)] sm:h-[76px] sm:pl-7">
         <a href="#home" className="relative z-10 whitespace-nowrap text-[22px] font-black tracking-[-.04em] sm:text-[27px]">
-          YOUR<span className="bg-[linear-gradient(90deg,#FFB347,#FF6A00,#FFB347)] bg-[length:200%_100%] bg-clip-text text-transparent animate-shine">NAME</span>
+          RANA <span className="bg-[linear-gradient(90deg,#FFB347,#FF6A00,#FFB347)] bg-[length:200%_100%] bg-clip-text text-transparent animate-shine">USMAN</span>
         </a>
 
         <nav className="hidden lg:block">

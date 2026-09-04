@@ -42,4 +42,4 @@ npm run preview
 - `tailwind.config.js` — palette, fonts, custom keyframes and animations
 - `src/index.css` — only Tailwind directives + Tailwind-applied global base rules
 
-Replace `YOUR NAME`, `hello@yourdomain.com`, social links and project details with your final data.
+Replace `YOUR NAME`, `macktech28@gmail.com`, social links and project details with your final data.

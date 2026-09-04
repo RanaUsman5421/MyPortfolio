@@ -24,7 +24,7 @@ export default function ContactSection() {
 
   const copyEmail = async () => {
     try {
-      await navigator.clipboard.writeText('hello@yourdomain.com')
+      await navigator.clipboard.writeText('macktech28@gmail.com')
       setCopyLabel('COPIED')
     } catch {
       setCopyLabel('SELECT')
@@ -46,7 +46,7 @@ export default function ContactSection() {
             <p className="mt-[13px] text-sm text-black/[.65] dark:text-white/[.7]">The most useful first message explains what the business is trying to improve, who will use the product and what is currently difficult or manual.</p>
             <div className="relative z-10 mt-[27px] flex flex-col gap-[11px]">
               <div className="flex items-center justify-between gap-[15px] rounded-2xl border border-black/[.1] bg-black/[.02] px-4 py-[15px] dark:border-white/[.09] dark:bg-white/[.03]">
-                <div><span className="block text-xs font-bold text-black/[.45] dark:text-white/[.45]">EMAIL</span><b className="text-[13px]">hello@yourdomain.com</b></div>
+                <div><span className="block text-xs font-bold text-black/[.45] dark:text-white/[.45]">EMAIL</span><b className="text-[13px]">macktech28@gmail.com</b></div>
                 <button type="button" onClick={copyEmail} className="border-0 bg-transparent text-[10px] font-black tracking-[.08em] text-[#a85b13] dark:text-amber">{copyLabel}</button>
               </div>
               <div className="flex items-center justify-between gap-[15px] rounded-2xl border border-black/[.1] bg-black/[.02] px-4 py-[15px] dark:border-white/[.09] dark:bg-white/[.03]"><div><span className="block text-xs font-bold text-black/[.45] dark:text-white/[.45]">AVAILABILITY</span><b className="text-[13px]">Open for selected product work</b></div></div>
@@ -61,8 +61,8 @@ export default function ContactSection() {
             {!sent ? (
               <div>
                 <div className="grid grid-cols-1 gap-[13px] sm:grid-cols-2">
-                  <label className="mb-3.5 flex flex-col gap-[7px] text-[11px] font-extrabold tracking-[.05em] text-black/[.65] dark:text-white/[.7]">YOUR NAME<input ref={nameRef} className={fieldClass} placeholder="Enter your name" /></label>
-                  <label className="mb-3.5 flex flex-col gap-[7px] text-[11px] font-extrabold tracking-[.05em] text-black/[.65] dark:text-white/[.7]">EMAIL ADDRESS<input ref={emailRef} className={fieldClass} type="email" placeholder="name@company.com" /></label>
+                  <label className="mb-3.5 flex flex-col gap-[7px] text-[11px] font-extrabold tracking-[.05em] text-black/[.65] dark:text-white/[.7]">RANA USMAN<input ref={nameRef} className={fieldClass} placeholder="Enter your name" /></label>
+                  <label className="mb-3.5 flex flex-col gap-[7px] text-[11px] font-extrabold tracking-[.05em] text-black/[.65] dark:text-white/[.7]">macktech28@gmail.com<input ref={emailRef} className={fieldClass} type="email" placeholder="name@company.com" /></label>
                 </div>
                 <div className="grid grid-cols-1 gap-[13px] sm:grid-cols-2">
                   <label className="mb-3.5 flex flex-col gap-[7px] text-[11px] font-extrabold tracking-[.05em] text-black/[.65] dark:text-white/[.7]">PROJECT TYPE<select className={fieldClass} defaultValue="AI / SaaS Product"><option>AI / SaaS Product</option><option>Dashboard / Portal Redesign</option><option>Automation System</option><option>Operations Platform</option><option>Other</option></select></label>
