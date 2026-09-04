@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { @apply scroll-smooth scroll-pt-[110px]; }
+  body { @apply m-0 overflow-x-hidden bg-[#F3F1EE] font-raleway text-ink antialiased dark:bg-night dark:text-white; }
+  * { @apply box-border; }
+  ::selection { @apply bg-orange text-white; }
+  button, input, textarea, select { font: inherit; }
+}
