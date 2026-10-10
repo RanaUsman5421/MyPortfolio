@@ -9,3 +9,22 @@
   ::selection { @apply bg-orange text-white; }
   button, input, textarea, select { font: inherit; }
 }
+
+/* Native dropdown menus need opaque colors instead of inherited transparency. */
+#contact select {
+  color-scheme: light;
+}
+
+#contact select option {
+  background-color: #ffffff;
+  color: #17130f;
+}
+
+html.dark #contact select {
+  color-scheme: dark;
+}
+
+html.dark #contact select option {
+  background-color: #211c18;
+  color: #ffffff;
+}

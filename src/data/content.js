@@ -1,10 +1,10 @@
 export const expertiseItems = [
-  { n:'01', title:'AI Product Strategy', desc:'Turn an idea into a clear product model, user flow, feature system and AI-assisted value proposition.', path:'M12 2l2.5 6.5L21 11l-5 4 1.5 7L12 18l-5.5 4L8 15l-5-4 6.5-2.5z' },
-  { n:'02', title:'Dashboard & Portal UX', desc:'Structure complex operational data into advanced dashboards that remain usable, clean and professional.', path:'M4 5h16v14H4zM4 10h16M9 10v9' },
-  { n:'03', title:'Business Automation', desc:'Map repetitive manual work and redesign it as rules, triggers, AI actions and connected workflows.', path:'M13 2L4 14h7l-1 8 9-12h-7z' },
-  { n:'04', title:'Growth Systems', desc:'Connect product, acquisition, conversion, follow-up and reporting around measurable business growth.', path:'M4 19V5M4 15l5-5 4 4 7-7M16 7h4v4' },
-  { n:'05', title:'Operations Design', desc:'Turn day-to-day business processes into trackable flows, ownership states, reporting and control points.', path:'M5 7h14M5 12h9M5 17h6M17 14l3 3 3-5' },
-  { n:'06', title:'Product Direction', desc:'Prioritize features, simplify journeys and shape how a digital product should work before development.', path:'M4 6h16M4 12h10M4 18h7M18 11l2 2 3-4' },
+  { n:'01', title:'MERN Web Applications', desc:'Full-stack web applications built with MongoDB, Express.js, React and Node.js, from responsive interfaces to backend APIs and databases.', path:'M3 4h18v16H3zM3 9h18M6 6.5h.01M9 6.5h.01M9 12l-3 2 3 2M15 12l3 2-3 2' },
+  { n:'02', title:'Dashboards & Admin Portals', desc:'Custom dashboards and admin panels for managing users, tracking operations, reviewing reports and making business data easier to act on.', path:'M4 5h16v14H4zM4 10h16M9 10v9M12 16v-2M15 16v-4M18 16v-3' },
+  { n:'03', title:'System Automation', desc:'Connected workflows, triggers, notifications and integrations that reduce repetitive tasks and keep business processes moving.', path:'M13 2L4 14h7l-1 8 9-12h-7z' },
+  { n:'04', title:'Application Development', desc:'Custom business applications that turn requirements into practical features, clear user flows and connected systems.', path:'M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z' },
+  { n:'05', title:'Desktop Software Development', desc:'Desktop software tailored to everyday operations, with focused interfaces, data management and tools for routine business tasks.', path:'M3 4h18v13H3zM8 21h8M12 17v4M3 14h18' },
+  { n:'06', title:'Backend APIs & Integrations', desc:'Node.js and Express.js APIs, MongoDB data models and third-party integrations that connect web apps, desktop software and business services.', path:'M8 5H4v14h4M16 5h4v14h-4M10 8l-3 4 3 4M14 8l3 4-3 4' },
 ]
 
 export const processSteps = [

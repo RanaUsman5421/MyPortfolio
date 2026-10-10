@@ -6,6 +6,12 @@ function ArrowIcon() {
   return <svg viewBox="0 0 24 24" className="h-[15px] w-[15px] fill-none stroke-current stroke-[2.2]"><path d="M7 17L17 7M8 7h9v9"/></svg>
 }
 
+function EyeIcon() {
+  return <svg aria-hidden="true" viewBox="0 0 24 24" className="h-[15px] w-[15px] fill-none stroke-current stroke-[2.2]"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg>
+}
+
+const actionClass = 'flex items-center gap-2 border-0 bg-transparent font-extrabold text-current transition hover:text-orange focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-orange'
+
 export default function ProjectsSection({ onOpen }) {
   return (
     <section id="projects" className="relative py-[82px] sm:py-28">
@@ -30,12 +36,16 @@ export default function ProjectsSection({ onOpen }) {
               </div>
               <h3 className={`relative mt-[120px] font-light leading-none tracking-[-.035em] sm:mt-[92px] ${project.featured ? 'text-[clamp(42px,5vw,70px)] lg:max-w-[10ch]' : 'text-[clamp(31px,3vw,46px)]'}`}>{project.title}</h3>
               <p className={`relative mt-3.5 text-sm text-black/[.65] dark:text-white/[.7] ${project.featured ? 'max-w-[60ch] sm:text-[15px]' : 'max-w-[48ch]'}`}>{project.cardDescription}</p>
-              <div className="relative mt-[22px] flex flex-wrap gap-2">
+              <div className="relative mb-[76px] mt-[22px] flex flex-wrap gap-2">
                 {project.chips.map(chip => <span key={chip} className="rounded-full border border-black/[.15] bg-black/[.025] px-[11px] py-2 text-[11px] font-bold dark:border-white/[.15] dark:bg-white/[.04]">{chip}</span>)}
               </div>
               <div className="absolute bottom-[27px] left-6 right-6 flex items-center justify-between border-t border-black/[.1] pt-[18px] text-xs font-extrabold dark:border-white/[.09] sm:left-[30px] sm:right-[30px]">
-                <span>CASE STUDY</span>
-                <button type="button" onClick={event => { event.stopPropagation(); onOpen(project) }} className="flex items-center gap-2 border-0 bg-transparent font-extrabold text-current transition group-hover:text-orange">VIEW DETAILS <ArrowIcon /></button>
+                <button type="button" onClick={event => { event.stopPropagation(); onOpen(project) }} className={actionClass}>VIEW DETAILS <ArrowIcon /></button>
+                {project.url ? (
+                  <a href={project.url} target="_blank" rel="noopener noreferrer" onClick={event => event.stopPropagation()} className={actionClass}>VIEW PROJECT <EyeIcon /></a>
+                ) : (
+                  <button type="button" disabled title="Project link coming soon" className={`${actionClass} cursor-not-allowed opacity-50`}>VIEW PROJECT <EyeIcon /></button>
+                )}
               </div>
             </Reveal>
           ))}

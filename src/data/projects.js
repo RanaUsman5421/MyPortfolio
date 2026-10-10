@@ -1,5 +1,6 @@
 export const projects = [
   {
+    url: 'https://lionexcourier.com',
     id: 'lionex',
     number: '01',
     metaTitle: 'LOGISTICS PLATFORM',
@@ -14,6 +15,7 @@ export const projects = [
     featured: true,
   },
   {
+    url: 'https://intellioera.com',
     id: 'intellioera', number: '02', metaTitle: 'AI WORKFORCE', metaSide: 'SAAS · GROWTH',
     label: 'AI WORKFORCE · BUSINESS GROWTH', title: 'IntellioEra',
     cardDescription: 'An AI-first business tools ecosystem designed to connect management, sales, marketing, finance and operations in one intelligent workspace.',
@@ -22,6 +24,7 @@ export const projects = [
     chips: ['AI Agents','Business Tools','Automation'], modalChips: ['AI Agents','SaaS','Automation','Growth'],
   },
   {
+    url: 'https://fieldtrack.intellioera.com',
     id: 'fieldtrack', number: '03', metaTitle: 'FIELD OPERATIONS', metaSide: 'GPS · MOBILE UX',
     label: 'FIELD OPS · GPS · WORKFORCE', title: 'FieldTrack',
     cardDescription: 'A field workforce product focused on live movement, visit verification, field forms, status flows and operational accountability.',
@@ -30,6 +33,7 @@ export const projects = [
     chips: ['GPS','Visits','Mobile Forms'], modalChips: ['GPS','Field Ops','Mobile UX','Analytics'],
   },
   {
+    url: 'https://lietrack.intellioera.com',
     id: 'lietrack', number: '04', metaTitle: 'WORKFORCE VISIBILITY', metaSide: 'DESKTOP · MONITORING',
     label: 'DESKTOP · WORKFORCE VISIBILITY', title: 'LieTrack',
     cardDescription: 'A remote workforce visibility concept built around desktop activity, randomized screenshots, attendance intelligence and productivity review.',
@@ -38,6 +42,7 @@ export const projects = [
     chips: ['Remote Teams','Desktop App','Analytics'], modalChips: ['Desktop','Monitoring','Team Analytics','Portal'],
   },
   {
+    url: 'https://nexora.intellioera.com',
     id: 'social', number: '05', metaTitle: 'SOCIAL AUTOMATION', metaSide: 'CONTENT · ANALYTICS',
     label: 'CONTENT · AUTOMATION · ANALYTICS', title: 'AI Social Manager',
     cardDescription: 'A unified workspace for AI-assisted content creation, scheduling, file management and social performance visibility.',
@@ -46,6 +51,7 @@ export const projects = [
     chips: ['Content AI','Scheduling','Analytics'], modalChips: ['Social Media','AI Content','Scheduling','Analytics'],
   },
   {
+    url: '',
     id: 'sales', number: '06', metaTitle: 'AI SALES', metaSide: 'WHATSAPP · CRM',
     label: 'WHATSAPP · SALES AUTOMATION', title: 'AI Sales Agent',
     cardDescription: 'A conversational sales concept designed to respond faster, qualify prospects, support follow-ups and connect customer conversations with business workflows.',

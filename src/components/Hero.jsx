@@ -54,10 +54,10 @@ export default function Hero() {
             AI · PRODUCT · AUTOMATION · GROWTH
           </div>
           <h1 className="mx-auto max-w-[10ch] text-[clamp(46px,15vw,70px)] font-black uppercase leading-[.88] tracking-[-.052em] lg:mx-0 lg:max-w-[9.5ch] lg:text-[clamp(54px,6.3vw,94px)]">
-            <span className="block overflow-hidden"><b className="block animate-rise">I BUILD</b></span>
-            <span className="block overflow-hidden"><b className="block animate-rise text-orange drop-shadow-[0_0_42px_rgba(255,106,0,.32)] [animation-delay:80ms]">SMART</b></span>
-            <span className="block overflow-hidden"><b className="block animate-rise [animation-delay:160ms]">DIGITAL</b></span>
-            <span className="block overflow-hidden"><b className="block animate-rise [animation-delay:240ms]">SYSTEMS.</b></span>
+            <span className="block overflow-hidden"><b className="block animate-rise">I SOLVE</b></span>
+            <span className="block overflow-hidden"><b className="block animate-rise text-orange drop-shadow-[0_0_42px_rgba(255,106,0,.32)] [animation-delay:80ms]">REAL</b></span>
+            <span className="block overflow-hidden"><b className="block animate-rise [animation-delay:160ms]">BUSINESS</b></span>
+            <span className="block overflow-hidden"><b className="block animate-rise [animation-delay:240ms]">PROBLEMS</b></span>
           </h1>
           <p className="mx-auto my-[25px] max-w-[58ch] text-base font-medium text-black/[.65] dark:text-white/[.7] sm:text-lg lg:mx-0">
             I turn business problems into intelligent products, premium digital experiences and automation-led systems designed for real operations and measurable growth.

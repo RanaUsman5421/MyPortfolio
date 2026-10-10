@@ -3,10 +3,10 @@ import Reveal from './ui/Reveal'
 import { Kicker } from './ui/SectionHeading'
 
 const points = [
-  ['Business-first', 'Features start from operational problems, not trends.'],
-  ['Premium UX', 'Complex systems should still feel clear and refined.'],
-  ['Automation-led', 'Reduce manual steps wherever the workflow allows.'],
-  ['Growth-aware', 'Every product should connect back to business value.'],
+  ['MERN Stack', 'MongoDB, Express.js, React and Node.js for full-stack web development.'],
+  ['Application Development', 'Business applications built around clear interfaces and practical workflows.'],
+  ['Desktop Software', 'Desktop applications that support everyday business operations.'],
+  ['Connected Systems', 'APIs, databases and automation that bring the whole product together.'],
 ]
 
 export default function AboutSection() {
@@ -23,10 +23,10 @@ export default function AboutSection() {
             <small className="mt-3 block text-[11px] font-extrabold tracking-[.13em] text-[#a85b13] dark:text-amber">STRATEGY → SYSTEM → GROWTH</small>
           </div>
           {[
-            ['PRODUCT', 'left-6 top-7'],
-            ['OPERATIONS', 'right-6 top-[110px]'],
-            ['AUTOMATION', 'bottom-[42px] left-7'],
-            ['GROWTH', 'bottom-[92px] right-7'],
+            ['REACT', 'left-6 top-7'],
+            ['NODE.JS', 'right-6 top-[110px]'],
+            ['EXPRESS.JS', 'bottom-[42px] left-7'],
+            ['MONGODB', 'bottom-[92px] right-7'],
           ].map(([label, pos]) => (
             <span key={label} className={`absolute z-20 rounded-[14px] border border-black/[.15] bg-white/[.9] px-[13px] py-2.5 text-[11px] font-extrabold shadow-sm backdrop-blur-xl dark:border-white/[.15] dark:bg-[#110e0c]/[.85] ${pos}`}>{label}</span>
           ))}
@@ -34,8 +34,8 @@ export default function AboutSection() {
 
         <Reveal>
           <Kicker>ABOUT ME</Kicker>
-          <h2 className="text-[clamp(38px,4.4vw,64px)] font-black uppercase leading-[.98] tracking-[-.045em]">BUILDING WHERE <span className="text-orange">AI MEETS BUSINESS.</span></h2>
-          <p className="mt-[22px] max-w-[62ch] text-[17px] text-black/[.65] dark:text-white/[.7]">My work sits between product direction, operations, automation and interface design. I enjoy taking a complicated business workflow, finding where time is being lost, and turning it into a cleaner digital system that people can actually use.</p>
+          <h2 className="text-[clamp(38px,4.4vw,64px)] font-black uppercase leading-[.98] tracking-[-.045em]">FULL-STACK SOLUTIONS. <span className="text-orange">MERN AT THE CORE.</span></h2>
+          <p className="mt-[22px] max-w-[62ch] text-[17px] text-black/[.65] dark:text-white/[.7]">I am Rana Usman, a developer focused on the MERN stack: MongoDB, Express.js, React and Node.js. I build full-stack web applications, connecting responsive interfaces with backend APIs and databases to solve real business problems.</p>
           <p className="mt-4 max-w-[62ch] text-[17px] text-black/[.65] dark:text-white/[.7]">I focus on practical AI — not AI as decoration. The goal is to create tools that save effort, improve visibility, speed up decisions and make the business experience feel more advanced.</p>
           <div className="mt-7 grid grid-cols-1 gap-3 sm:grid-cols-2">
             {points.map(([title, text]) => (

@@ -52,8 +52,18 @@ export default function ContactSection() {
               <div className="flex items-center justify-between gap-[15px] rounded-2xl border border-black/[.1] bg-black/[.02] px-4 py-[15px] dark:border-white/[.09] dark:bg-white/[.03]"><div><span className="block text-xs font-bold text-black/[.45] dark:text-white/[.45]">AVAILABILITY</span><b className="text-[13px]">Open for selected product work</b></div></div>
               <div className="flex items-center justify-between gap-[15px] rounded-2xl border border-black/[.1] bg-black/[.02] px-4 py-[15px] dark:border-white/[.09] dark:bg-white/[.03]"><div><span className="block text-xs font-bold text-black/[.45] dark:text-white/[.45]">FOCUS</span><b className="text-[13px]">AI · SaaS · Ops · Growth</b></div></div>
             </div>
+            <div className="relative z-10 mt-5">
+              <Button href="https://wa.me/923188622132" target="_blank" rel="noopener noreferrer" className="w-full justify-center">
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20l1.1-4.9a8.5 8.5 0 1 1 16.4-3.6Z"/><path d="M8 7.5c0 4.5 4 8.5 8.5 8.5l1-2.5-3-1-1 1c-1.5-.6-2.9-2-3.5-3.5l1-1-1-3Z"/></svg>
+                Chat on WhatsApp
+              </Button>
+            </div>
             <div className="relative z-10 mt-[19px] flex flex-wrap gap-[9px]">
-              {['LinkedIn','GitHub','Instagram'].map(item => <a key={item} href="#" className="flex h-10 items-center rounded-full border border-black/[.1] px-3.5 text-[11px] font-extrabold text-black/[.65] transition duration-300 hover:-translate-y-[3px] hover:border-orange hover:bg-orange/[.12] hover:text-ink dark:border-white/[.09] dark:text-white/[.7] dark:hover:text-white">{item}</a>)}
+              {[
+                ['LinkedIn', 'https://www.linkedin.com/in/rana-usman-65b5563ba/'],
+                ['GitHub', 'https://github.com/RanaUsman5421'],
+                ['Instagram', 'https://www.instagram.com/rana.usman272/'],
+              ].map(([item, url]) => <a key={item} href={url} target="_blank" rel="noopener noreferrer" className="flex h-10 items-center rounded-full border border-black/[.1] px-3.5 text-[11px] font-extrabold text-black/[.65] transition duration-300 hover:-translate-y-[3px] hover:border-orange hover:bg-orange/[.12] hover:text-ink dark:border-white/[.09] dark:text-white/[.7] dark:hover:text-white">{item}</a>)}
             </div>
           </Reveal>
 
@@ -61,8 +71,8 @@ export default function ContactSection() {
             {!sent ? (
               <div>
                 <div className="grid grid-cols-1 gap-[13px] sm:grid-cols-2">
-                  <label className="mb-3.5 flex flex-col gap-[7px] text-[11px] font-extrabold tracking-[.05em] text-black/[.65] dark:text-white/[.7]">RANA USMAN<input ref={nameRef} className={fieldClass} placeholder="Enter your name" /></label>
-                  <label className="mb-3.5 flex flex-col gap-[7px] text-[11px] font-extrabold tracking-[.05em] text-black/[.65] dark:text-white/[.7]">macktech28@gmail.com<input ref={emailRef} className={fieldClass} type="email" placeholder="name@company.com" /></label>
+                  <label className="mb-3.5 flex flex-col gap-[7px] text-[11px] font-extrabold tracking-[.05em] text-black/[.65] dark:text-white/[.7]">Your Name<input ref={nameRef} className={fieldClass} placeholder="Enter your name" /></label>
+                  <label className="mb-3.5 flex flex-col gap-[7px] text-[11px] font-extrabold tracking-[.05em] text-black/[.65] dark:text-white/[.7]">Your Email<input ref={emailRef} className={fieldClass} type="email" placeholder="name@company.com" /></label>
                 </div>
                 <div className="grid grid-cols-1 gap-[13px] sm:grid-cols-2">
                   <label className="mb-3.5 flex flex-col gap-[7px] text-[11px] font-extrabold tracking-[.05em] text-black/[.65] dark:text-white/[.7]">PROJECT TYPE<select className={fieldClass} defaultValue="AI / SaaS Product"><option>AI / SaaS Product</option><option>Dashboard / Portal Redesign</option><option>Automation System</option><option>Operations Platform</option><option>Other</option></select></label>
@@ -70,7 +80,6 @@ export default function ContactSection() {
                 </div>
                 <label className="mb-3.5 flex flex-col gap-[7px] text-[11px] font-extrabold tracking-[.05em] text-black/[.65] dark:text-white/[.7]">WHAT DO YOU WANT TO BUILD?<textarea ref={messageRef} className={`${fieldClass} min-h-[126px] resize-y`} placeholder="Tell me about the problem, users and the outcome you want..." /></label>
                 <div className="mt-[5px] flex flex-wrap items-center justify-between gap-3">
-                  <span className="max-w-[42ch] text-[11px] text-black/[.45] dark:text-white/[.45]">This demo validates the form in-browser. Connect Formspree, EmailJS, your API or backend before going live.</span>
                   <Button type="button" onClick={send}>Send Message <svg viewBox="0 0 24 24"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4z"/></svg></Button>
                 </div>
               </div>

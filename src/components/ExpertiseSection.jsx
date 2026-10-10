@@ -8,8 +8,8 @@ export default function ExpertiseSection() {
       <div className="mx-auto w-[92vw] max-w-[1280px]">
         <SectionHeading
           kicker="EXPERTISE"
-          title={<>FROM STRATEGY TO <span className="text-orange">EXECUTION.</span></>}
-          description="A portfolio built around the intersection of product, business operations, UX and automation."
+          title={<>DEVELOPMENT THAT <span className="text-orange">SOLVES PROBLEMS.</span></>}
+          description="MERN-focused development across web applications, dashboards, business software and automation, with APIs and integrations connecting every part."
         />
         <div className="grid grid-cols-1 gap-[18px] sm:grid-cols-2 xl:grid-cols-3">
           {expertiseItems.map(item => (
